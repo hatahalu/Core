@@ -1,7 +1,7 @@
 #include "mbed.h"
 
 // ピンの設定 (mbedボードに合わせて変更)
-UnbufferedSerial pc(USBTX, USBRX, 9600); // TX, RXピンとボーレートの設定
+UnbufferedSerial pc(D5, D4, 9600); // TX, RXピンとボーレートの設定
 
 int main() {
     char buffer[128]; // データを格納するバッファ
